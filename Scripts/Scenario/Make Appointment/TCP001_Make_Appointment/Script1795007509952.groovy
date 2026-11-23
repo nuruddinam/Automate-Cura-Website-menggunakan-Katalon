@@ -21,6 +21,8 @@ WebUI.callTestCase(findTestCase('Blocks/Reusable TC/Open_Browser'), [:], Failure
 
 WebUI.callTestCase(findTestCase('Blocks/Positive TC/Login/LG0001_Positive_Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Blocks/Positive TC/MakeAppointment/MA0001_Positive_Appointment'), [('facility') : 'Hongkong CURA Healthcare Center'
-        , ('komentar') : 'Mau sowan pak dokter', ('readmission') : false, ('programs') : 'Medicare'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Blocks/Positive TC/MakeAppointment/MA0001_Positive_Appointment'), [('facility') : facility
+        , ('komentar') : komentar, ('readmission') : readmission, ('programs') : programs, ('visitDate') : visitDate], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(5)
 
