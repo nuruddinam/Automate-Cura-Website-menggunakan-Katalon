@@ -31,3 +31,5 @@ WebUI.click(findTestObject('Page_Login/Login_btn'))
 
 WebUI.verifyElementVisible(findTestObject('Page_MakeAppointment/Make Appointment_txtField'))
 
+WebUI.acceptAlert()
+
